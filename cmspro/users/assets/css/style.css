@@ -29,8 +29,8 @@ a, a:hover, a:focus {
 }
 ::selection {
 
-    background: #68dff0;
-    color: #fff;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
 }
 ::-moz-selection {
     background: #68dff0;
