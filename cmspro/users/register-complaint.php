@@ -103,6 +103,65 @@ function getCat(val) {
                       <form class="form-horizontal style-form" method="post" name="complaint" enctype="multipart/form-data" >
 
 <div class="form-group">
+<label class="col-sm-2 col-sm-2 control-label">Category</label>
+<div class="col-sm-4">
+<select name="category" id="category" class="form-control" onChange="getCat(this.value);" required="">
+<option value="">Select Category</option>
+<?php $sql=mysqli_query($con,"select id,categoryName from category ");
+while ($rw=mysqli_fetch_array($sql)) {
+  ?>
+  <option value="<?php echo htmlentities($rw['id']);?>"><?php echo htmlentities($rw['categoryName']);?></option>
+<?php
+}
+?>
+</select>
+ </div>
+<label class="col-sm-2 col-sm-2 control-label">Sub Category </label>
+ <div class="col-sm-4">
+<select name="subcategory" id="subcategory" class="form-control" >
+<option value="">Select Subcategory</option>
+</select>
+</div>
+ </div>
+
+
+
+
+<div class="form-group">
+<label class="col-sm-2 col-sm-2 control-label">Complaint Type</label>
+<div class="col-sm-4">
+<select name="complaintype" class="form-control" required="">
+                <option value=" Complaint"> Complaint</option>
+                  <option value="General Query">General Query</option>
+                </select> 
+</div>
+
+<label class="col-sm-2 col-sm-2 control-label">State</label>
+<div class="col-sm-4">
+<select name="state" required="required" class="form-control">
+<option value="">Select State</option>
+<?php $sql=mysqli_query($con,"select stateName from state ");
+while ($rw=mysqli_fetch_array($sql)) {
+  ?>
+  <option value="<?php echo htmlentities($rw['stateName']);?>"><?php echo htmlentities($rw['stateName']);?></option>
+<?php
+}
+?>
+
+</select>
+</div>
+</div>
+
+
+<div class="form-group">
+<label class="col-sm-2 col-sm-2 control-label">Nature of Complaint</label>
+<div class="col-sm-4">
+<input type="text" name="noc" required="required" value="" required="" class="form-control">
+</div>
+
+</div>
+
+<div class="form-group">
 <label class="col-sm-2 col-sm-2 control-label">Complaint Details (max 2000 words) </label>
 <div class="col-sm-6">
 <textarea  name="complaindetails" required="required" cols="10" rows="10" class="form-control" maxlength="2000"></textarea>

@@ -7,7 +7,7 @@ if(strlen($_SESSION['login'])==0)
 header('location:index.php');
 }
 else{
-date_default_timezone_set('Asia/Malaysia');// change according timezone
+date_default_timezone_set('Asia/Kolkata');// change according timezone
 $currentTime = date( 'd-m-Y h:i:s A', time () );
 
 
@@ -116,7 +116,23 @@ $errormsg="Profile not updated !!";
 <div class="form-group">
 <label class="col-sm-2 col-sm-2 control-label">State</label>
 <div class="col-sm-4">
-<input type="text" name="state" required="required" value="<?php echo htmlentities($row['state']);?>" class="form-control">
+<select name="state" required="required" class="form-control">
+<option value="<?php echo htmlentities($row['State']);?>"><?php echo htmlentities($st=$row['State']);?></option>
+<?php $sql=mysqli_query($con,"select stateName from state ");
+while ($rw=mysqli_fetch_array($sql)) {
+  if($rw['stateName']==$st)
+  {
+    continue;
+  }
+  else
+  {
+  ?>
+  <option value="<?php echo htmlentities($rw['stateName']);?>"><?php echo htmlentities($rw['stateName']);?></option>
+<?php
+}}
+?>
+
+</select>
 </div>
 <label class="col-sm-2 col-sm-2 control-label">Country </label>
 <div class="col-sm-4">
