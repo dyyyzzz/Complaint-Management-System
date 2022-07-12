@@ -86,13 +86,13 @@ $_SESSION['errmsg']="Invalid username or password";
 	</div><!-- /navbar -->
 
 	
-	<div class="login-page bk-img" style="background-image: url(img/admin.png);">
-		<div class="form-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<h1 class="text-center text-bold text-light mt-4x">Sign in</h1>
-						<div class="well row pt-2x pb-3x bk-light">
+	<div class="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="module module-login span4 offset4">
+					<form class="form-vertical" method="post">
+						<div class="module-head">
+							<h3>Sign In</h3>
 						<span style="color:red;" ><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
 						<div class="module-body">
 							<div class="control-group">
