@@ -60,7 +60,7 @@ else{
 											<div class="panel-body bk-primary text-light">
 												<div class="stat-panel text-center">
 <?php 
-$sql ="SELECT id from tblusers ";
+$sql ="SELECT id from users ";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -70,7 +70,7 @@ $regusers=$query->rowCount();
 													<div class="stat-panel-title text-uppercase">Regular Users</div>
 												</div>
 											</div>
-											<a href="reg-users.php" class="block-anchor panel-footer">Full Detail <i class="fa fa-arrow-right"></i></a>
+											<a href="cmspro\admin\manage-users.php" class="block-anchor panel-footer">Full Detail <i class="fa fa-arrow-right"></i></a>
 										</div>
 									</div>
 									<div class="col-md-3">
