@@ -196,27 +196,6 @@ $manusers=$query->rowCount();
 			$('.dataTables_paginate > a:first-child').append('<i class="icon-chevron-left shaded"></i>');
 			$('.dataTables_paginate > a:last-child').append('<i class="icon-chevron-right shaded"></i>');
 		} );
-		
-		window.onload = function(){
-		
-			// Line chart from swirlData for dashReport
-			var ctx = document.getElementById("dashReport").getContext("2d");
-			window.myLine = new Chart(ctx).Line(swirlData, {
-				responsive: true,
-				scaleShowVerticalLines: false,
-				scaleBeginAtZero : true,
-				multiTooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
-			}); 
-			
-			// Pie Chart from doughutData
-			var doctx = document.getElementById("chart-area3").getContext("2d");
-			window.myDoughnut = new Chart(doctx).Pie(doughnutData, {responsive : true});
-	
-			// Dougnut Chart from doughnutData
-			var doctx = document.getElementById("chart-area4").getContext("2d");
-			window.myDoughnut = new Chart(doctx).Doughnut(doughnutData, {responsive : true});
-	
-		}
-		</script>
+	</script>
 </body>
 <?php } ?>
