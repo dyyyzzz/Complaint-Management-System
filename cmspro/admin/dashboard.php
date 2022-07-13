@@ -23,6 +23,22 @@ $currentTime = date( 'd-m-Y h:i:s A', time () );
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
 	<link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
 	<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Sandstone Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap Datatables -->
+	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+	<!-- Bootstrap social button library -->
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<!-- Bootstrap select -->
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<!-- Bootstrap file input -->
+	<link rel="stylesheet" href="css/fileinput.min.css">
+	<!-- Awesome Bootstrap checkbox -->
+	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+	<!-- Admin Stye -->
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -163,6 +179,29 @@ $manusers=$query->rowCount();
 	<script src="js/fileinput.js"></script>
 	<script src="js/chartData.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		
+	window.onload = function(){
+    
+		// Line chart from swirlData for dashReport
+		var ctx = document.getElementById("dashReport").getContext("2d");
+		window.myLine = new Chart(ctx).Line(swirlData, {
+			responsive: true,
+			scaleShowVerticalLines: false,
+			scaleBeginAtZero : true,
+			multiTooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
+		}); 
+		
+		// Pie Chart from doughutData
+		var doctx = document.getElementById("chart-area3").getContext("2d");
+		window.myDoughnut = new Chart(doctx).Pie(doughnutData, {responsive : true});
+
+		// Dougnut Chart from doughnutData
+		var doctx = document.getElementById("chart-area4").getContext("2d");
+		window.myDoughnut = new Chart(doctx).Doughnut(doughnutData, {responsive : true});
+
+	}
+	</script>
 
 <?php include('include/footer.php');?>
 
