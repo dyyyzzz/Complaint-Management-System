@@ -131,6 +131,28 @@ $gtc+=$tc;
 		</div><!--/.container-->
 	</div><!--/.wrapper-->
 
+	<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="panel panel-default">
+											<div class="panel-body bk-primary text-light">
+												<div class="stat-panel text-center">
+<?php 
+$sql ="SELECT id from users ";
+$query = $dbh -> prepare($sql);
+$query->execute();
+$results=$query->fetchAll(PDO::FETCH_OBJ);
+$manusers=$query->rowCount();
+?>
+													<div class="stat-panel-number h1 "><?php echo htmlentities($manusers);?></div>
+													<div class="stat-panel-title text-uppercase">Users</div>
+												</div>
+											</div>
+											<a href="manage-users.php" class="block-anchor panel-footer">Full Detail <i class="fa fa-arrow-right"></i></a>
+										</div>
+									</div>
+
 <?php include('include/footer.php');?>
 
 	<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
