@@ -23,22 +23,6 @@ $currentTime = date( 'd-m-Y h:i:s A', time () );
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
 	<link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
 	<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
-	<!-- Font awesome -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Sandstone Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Bootstrap Datatables -->
-	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
-	<!-- Bootstrap social button library -->
-	<link rel="stylesheet" href="css/bootstrap-social.css">
-	<!-- Bootstrap select -->
-	<link rel="stylesheet" href="css/bootstrap-select.css">
-	<!-- Bootstrap file input -->
-	<link rel="stylesheet" href="css/fileinput.min.css">
-	<!-- Awesome Bootstrap checkbox -->
-	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
-	<!-- Admin Stye -->
-	<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -147,30 +131,7 @@ $gtc+=$tc;
 		</div><!--/.container-->
 	</div><!--/.wrapper-->
 
-	<div class="row">
-							<div class="col-md-12">
-								<div class="row">
-									<div class="col-md-3">
-										<div class="panel panel-default">
-											<div class="panel-body bk-primary text-light">
-												<div class="stat-panel text-center">
-<?php 
-$sql ="SELECT id from users ";
-$query = $dbh -> prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$manusers=$query->rowCount();
-?>
-													<div class="stat-panel-number h1 "><?php echo htmlentities($manusers);?></div>
-													<div class="stat-panel-title text-uppercase">Users</div>
-												</div>
-											</div>
-											<a href="manage-users.php" class="block-anchor panel-footer">Full Detail <i class="fa fa-arrow-right"></i></a>
-										</div>
-									</div>
 
-
-	
 
 <?php include('include/footer.php');?>
 
