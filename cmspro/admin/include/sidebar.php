@@ -5,7 +5,7 @@
 
 		<ul class="widget widget-menu unstyled">
 							<li><a href="dashboard.php"><i class="menu-icon icon-dashboard"></i>Dashboard</a></li>
-							
+							<li><a href="dashboardD.php"><i class="menu-icon icon-dashboard"></i>DashboardD</a></li>
 					
 						</ul>
 <ul class="widget widget-menu unstyled">
