@@ -94,7 +94,7 @@ return true;
 
 	  <div id="login-page">
 	  	<div class="container">
-	  		<h3 align="center" style="color:#fff"><a href="../index.html" style="color:#fff">J&T Complaint Managent System</a></h3>
+	  		<h3 align="center" style="color:#fff"><a href="../index.html" style="color:#fff">J&T Complaint Management System</a></h3>
 	<hr />
 		      <form class="form-login" name="login" method="post">
 		        <h2 class="form-login-heading">sign in now</h2>
@@ -170,7 +170,7 @@ echo htmlentities($msg);
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
     <script>
-        $.backstretch("assets/img/login-bg.jpg", {speed: 500});
+        $.backstretch("assets/img/back.jpg", {speed: 500});
     </script>
 
 

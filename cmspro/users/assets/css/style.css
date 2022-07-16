@@ -29,7 +29,7 @@ a, a:hover, a:focus {
 }
 ::selection {
 
-    background: #68dff0;
+    background: #c53737;
     color: #fff;
 }
 ::-moz-selection {
@@ -138,9 +138,9 @@ a, a:hover, a:focus {
 /*Theme Buttons*/
 
 .btn-theme {
-  color: #fff;
-  background-color: #68dff0;
-  border-color: #48bcb4;
+  color: rgb(10, 10, 10);
+  background-color: #ffffff;
+  border-color: #ec5555;
 }
 .btn-theme:hover,
 .btn-theme:focus,
@@ -148,7 +148,7 @@ a, a:hover, a:focus {
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
   color: #fff;
-  background-color: #48bcb4;
+  background-color: #bc4848;
   border-color: #48bcb4;
 }
 
@@ -1981,13 +1981,13 @@ label {
 
 .form-login h2.form-login-heading {
 	margin: 0;
-	padding: 25px 20px;
+	padding: 10px 10px;
 	text-align: center;
-	background: #68dff0;
-	border-radius: 5px 5px 0 0;
+	background: #fdffff;
+	border-radius: 2px 4px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
-	color: #fff;
-	font-size: 20px;
+	color: rgb(0, 0, 0);
+	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: 300;
 }
