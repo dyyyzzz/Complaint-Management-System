@@ -128,11 +128,11 @@ while ($rw=mysqli_fetch_array($sql)) {
 
 
 <div class="form-group">
-<label class="col-sm-2 col-sm-2 control-label">Complaint Type</label>
+<label class="col-sm-2 col-sm-2 control-label">Complainer</label>
 <div class="col-sm-4">
 <select name="complaintype" class="form-control" required="">
-                <option value=" Complaint"> Complaint</option>
-                  <option value="General Query">General Query</option>
+                <option value=" Receiver"> Receiver</option>
+                  <option value="Sender">Sender</option>
                 </select> 
 </div>
 
@@ -151,16 +151,6 @@ while ($rw=mysqli_fetch_array($sql)) {
 </select>
 </div>
 </div>
-
-
-<div class="form-group">
-<label class="col-sm-2 col-sm-2 control-label">Nature of Complaint</label>
-<div class="col-sm-4">
-<input type="text" name="noc" required="required" value="" required="" class="form-control">
-</div>
-
-</div>
-
 <div class="form-group">
 <label class="col-sm-2 col-sm-2 control-label">Complaint Details (max 2000 words) </label>
 <div class="col-sm-6">
