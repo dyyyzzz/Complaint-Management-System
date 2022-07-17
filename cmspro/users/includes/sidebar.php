@@ -25,7 +25,7 @@ if($userphoto==""):
                   <li class="mt">
                       <a href="dashboard.php">
                           <i class="fa fa-dashboard"></i>
-                          <span>Dashboard</span>
+                          <span>HOME</span>
                       </a>
                   </li>
 
