@@ -60,7 +60,7 @@ $result=mysqli_fetch_array($sql);
 									<thead>
 										<tr>
 											<th>Complaint No</th>
-											<th> complainant Name</th>
+											<th>Complaint Name</th>
 											<th>Reg Date</th>
 											<th>Status</th>
 											
