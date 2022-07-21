@@ -44,7 +44,7 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CMS | Admin passwword recovery</title>
+	<title>CMS | Admin password recovery</title>
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -61,7 +61,7 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 				</a>
 
 			  	<a class="brand" href="../index.html">
-			  		Complaint Mnagaement System | Admin
+			  		J&T Complaint Management System | Admin
 			  	</a>
 
 				<div class="nav-collapse collapse navbar-inverse-collapse">
@@ -131,13 +131,7 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 		</div>
 	</div><!--/.wrapper-->
 
-	<div class="footer">
-		<div class="container">
-			 
 
-			<b class="copyright">&copy; 2020 CMS </b> All rights reserved.
-		</div>
-	</div>
 	<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
