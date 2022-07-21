@@ -892,7 +892,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@topColor', end
 	overflow: hidden
 }
 .widget-menu a {
-	color: #555;
+	color: rgb(166, 13, 13);
 	display: block;
 	line-height: 20px;
 	padding: 15px;
@@ -928,8 +928,8 @@ transition: all .2s ease-in-out;
 	border-top: 1px solid #555
 }
 .widget-menu>li>a {
-	background-color: #2d2b32;
-	color: #767676;
+	background-color: #fefdff;
+	color: #ff0606;
 	-webkit-transition: all .2s ease-in-out;
 -moz-transition: all .2s ease-in-out;
 transition: all .2s ease-in-out;
