@@ -186,7 +186,7 @@ body [class^="icon-"], body [class*=" icon-"] {
 	margin: 0!important
 }
 .navbar .navbar-inner {
-	background: #fff;
+	background: rgb(249, 63, 63);
 	border-bottom: 1px solid #bbb;
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
