@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 16, 2022 at 08:24 PM
+-- Generation Time: Jul 22, 2022 at 12:51 PM
 -- Server version: 5.7.33
 -- PHP Version: 7.4.19
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cmspro`
+-- Database: `jnt_complaint_system`
 --
 
 -- --------------------------------------------------------
@@ -170,7 +170,8 @@ CREATE TABLE `tblcomplaints` (
 
 INSERT INTO `tblcomplaints` (`complaintNumber`, `userId`, `category`, `subcategory`, `complaintType`, `state`, `noc`, `complaintDetails`, `complaintFile`, `regDate`, `status`, `lastUpdationDate`) VALUES
 (1, 2, 1, 'Online Shopping', ' Complaint', 'Delhi', 'Test Complaint', 'This is test complaint', '', '2020-06-28 13:20:55', 'closed', '2020-06-28 13:27:41'),
-(2, 3, 2, 'other', ' Complaint', 'Haryana', 'hhh', 'hhh', '01 LOGIN DETAILS & PROJECT INFO.txt', '2022-07-12 14:15:51', NULL, NULL);
+(2, 3, 2, 'other', ' Complaint', 'Haryana', 'hhh', 'hhh', '01 LOGIN DETAILS & PROJECT INFO.txt', '2022-07-12 14:15:51', NULL, NULL),
+(3, 4, 1, 'Item missing', ' Receiver', 'Selangor', '', 'xxxxx', '', '2022-07-22 12:50:44', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -298,7 +299,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `fullName`, `userEmail`, `password`, `contactNo`, `address`, `State`, `country`, `pincode`, `userImage`, `regDate`, `updationDate`, `status`) VALUES
 (1, 'Anuj kumar', 'phpgurukultest@gmail.com', 'f925916e2754e5e03f75dd58a5733251', 1234567890, NULL, NULL, NULL, NULL, '1fc8381ccac933612936bb617a5ae906.png', '2020-06-27 19:14:17', NULL, 1),
 (2, 'Test user', 'testuser@gmail.com', 'f925916e2754e5e03f75dd58a5733251', 1234567899, 'New Delhi', 'Delhi', 'India', 110091, '1fc8381ccac933612936bb617a5ae906.png', '2020-06-28 13:19:15', NULL, 1),
-(3, 'Adilah Rashid', 'nuradilah688@gmail.com', 'a9eab742a6a7e91436edc73374a824f5', 137199598, NULL, NULL, NULL, NULL, '72a61bfbbb68e08217197bff6f9116fa.jpg', '2022-07-10 07:29:36', NULL, 1);
+(3, 'Adilah Rashid', 'nuradilah688@gmail.com', 'a9eab742a6a7e91436edc73374a824f5', 137199598, NULL, NULL, NULL, NULL, '72a61bfbbb68e08217197bff6f9116fa.jpg', '2022-07-10 07:29:36', NULL, 1),
+(4, 'zzz', 'z@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 124185741, NULL, NULL, NULL, NULL, NULL, '2022-07-22 12:50:07', NULL, 1);
 
 --
 -- Indexes for dumped tables
@@ -409,7 +411,7 @@ ALTER TABLE `subcategory`
 -- AUTO_INCREMENT for table `tblcomplaints`
 --
 ALTER TABLE `tblcomplaints`
-  MODIFY `complaintNumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `complaintNumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tblforwardhistory`
@@ -439,7 +441,7 @@ ALTER TABLE `userlog`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
