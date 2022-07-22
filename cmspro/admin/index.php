@@ -64,7 +64,7 @@ $_SESSION['errmsg']="Invalid username or password";
 				</a>
 
 			  	<a class="brand" href="../index.html">
-			  		JnT Complaint Management System | Admin
+			  		J&T Complaint Management System | Admin
 			  	</a>
 
 				<div class="nav-collapse collapse navbar-inverse-collapse">
