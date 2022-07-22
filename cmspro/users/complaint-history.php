@@ -45,7 +45,7 @@ else{
 
       <section id="main-content">
           <section class="wrapper">
-          	<h3><i class="fa fa-angle-right"></i>Your Complaint Hstory</h3>
+          	<h3><i class="fa fa-angle-right"></i>Your Complaint History</h3>
 		  		<div class="row mt">
 			  		<div class="col-lg-12">
                       <div class="content-panel">
@@ -54,8 +54,8 @@ else{
                               <thead>
                               <tr style="text-align: center">
                                   <th style="text-align: center">Complaint Number</th>
-                                  <th style="text-align: center">Reg Date</th>
-                                  <th style="text-align: center">last Updation date</th>
+                                  <th style="text-align: center">Registeration Date</th>
+                                  <th style="text-align: center">Last Updation Date</th>
                                   <th style="text-align: center">Status</th>
                                   <th style="text-align: center">Action</th>
                                   
